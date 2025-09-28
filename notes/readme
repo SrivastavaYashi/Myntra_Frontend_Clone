@@ -1,0 +1,42 @@
+very important
+jsx ke andar online javascript ka expression likh sakte hai curly braces lagakar
+but what is js expression (output laakr de:jisse result produce ho)
+result produce ho like : string,number,array
+
+example
+export default function App() {
+  return <h1>Hello world {obj.age}</h1>
+}
+let obj={
+    name:"kartik",
+    age:60,
+}
+
+works for array too
+export default function App() {
+  return <h1>Hello world {arr}</h1>
+}
+let obj={
+    name:"kartik",
+    age:60,
+}
+let arr=[20,40,"helloji"];
+but array ke andar agar object hua to nhi hoga screen par kuch bhi print
+
+
+aise bnaate hai components means function ar inko hamlog jsx ke form bhi call kar sakte hai
+but html mein tags small letter se hii hote to inorder to differentiayte ki ye userdefined tag hai to hm iski capital letter se start karte hai function ko call karte time we can pass attributes too and can access them by using props
+export default function App() {
+  return <h1><>{element} {element1}</></h1>
+}
+let obj={
+    name:"kartik",
+    age:60,
+}
+let arr=[20,40,"helloji"];
+function Greet(props)
+{
+    return <p>{props.name} {props.age}</p>
+}
+const element = <Greet name="Yashi" age="24" />
+const element1=<h1 id="heading" classname="second">hello everyone</h1>
